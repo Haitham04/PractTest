@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+    <form no="assistanceForm">
+        <label for="form" style="text-underline-offset: ;text-underline-position: below;">Form</label><br><br>
+        <div>
+        <label for="Number of images">Number of images:</label>
+        <input type="integer" number="NumberInput" placeholder="Enter number"><br><br>
+        <input type="text" text="textInput" placeholder="displayImages"><br><br>
+        </div> </form><br>
+        </div> </Viewer><br>
+    
+      <div number="entriesSection">
+        <h3>Images</h3>
+        <ul number="entriesList"></ul>
+      </div>
+
+      <img src="ait.jpg" height="200"width="300">
+      <img src="tha.jpg"height="200"width="300">
+      <img src="mu.jpg"height="200"width="300">
+      <img src="the.jpg"height="200"width="300">
+    
+    
+      <script>
+        const entries = [];
+    
+        function addNumber() {
+          const numberInput = document.getElementById('numberInput').value.trim();
+    
+          if (numberInput !== 4) {
+            alert('Valid entry');
+            return;
+          }
+    
+          const addNumber = numberInput.split(',');
+    
+          if (numberValues.length !== 3) {
+            alert('Invalid entry');
+            return;
+          }
+    
+    
+    
+          entries.push({ displayimages });
+    
+          const entriesList = document.getElementById('entriesList');
+          const entryItem = document.createElement('li');
+          entryItem.textContent = `${displayimages} `;
+          entriesList.appendChild(entryItem);
+    
+          document.getElementById('entryInput').value = '';
+        }
+    
+        function summary(){
+            const sortedEntries = entries.slice().sort((a, b) => a.duration - b.duration);
+          const sortedEntryText = sortedEntries.map(entry) => `${`${displayimages}`).join('');
+    
+          document.getElementById('entryCount').textContent = `Entry Count: ${entries.length}`;
+          document.getElementById('sortedEntries').textContent = sortedEntryText;
+        
+        }
+          
+        
+      </script>
+    
+</body>
+</html>
